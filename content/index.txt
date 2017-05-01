@@ -1,0 +1,100 @@
+-----
+<section class="site">
+<header>
+
+# Balde is easy...
+
+</header>
+<pre><span class="cp">#include &lt;balde.h&gt;</span>
+ 
+<span class="kt">balde_response_t</span><span class="o">*</span>
+<span class="nf">hello</span><span class="p">(</span><span class="kt">balde_app_t</span> <span class="o">*</span><span class="n">app</span><span class="p">,</span> <span class="kt">balde_request_t</span> <span class="o">*</span><span class="n">request</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">balde_make_response</span><span class="p">(</span><span class="s">&quot;Hello World! I&#39;m the balde! :D&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+ 
+<span class="kt">int</span>
+<span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">balde_app_t</span> <span class="o">*</span><span class="n">app</span> <span class="o">=</span> <span class="n">balde_app_init</span><span class="p">();</span>
+    <span class="n">balde_app_add_url_rule</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="s">&quot;/&quot;</span><span class="p">,</span> <span class="n">BALDE_HTTP_GET</span><span class="p">,</span>
+        <span class="n">hello</span><span class="p">);</span>
+    <span class="n">balde_app_run</span><span class="p">(</span><span class="n">app</span><span class="p">);</span>
+    <span class="n">balde_app_free</span><span class="p">(</span><span class="n">app</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+</section>
+<section class="site">
+<header>
+
+# Balde is fast
+
+</header>
+<div class="half">
+
+It is designed to be fast, simple, and memory efficient. Most of its architecture
+is based on other microframeworks, like Flask, and it can run on any web server
+that supports SCGI.
+
+With balde you can serve hundreds of requests per second with a minimal
+memory footprint and all the performance features provided by SCGI.
+
+</div>
+</section>
+<section class="site">
+<header>
+
+# Features
+
+</header>
+
+- Simple templating engine, that converts markup to C code that is linked
+  directly to the application binary.
+- Static resources are embedded and served from the application binary.
+- RESTful request dispatching. Supports most HTTP methods.
+- Reverse resolution of URLs (similar to Flask's "url_for" function).
+- Secure cookies (client side sessions).
+- File uploads.
+- Compatible with SCGI and CGI servers.
+- Runs on any GLib-capable system.
+
+</section>
+<section class="site">
+<header>
+
+# Online tests
+
+</header>
+
+All the code pushed to our [Github repository](https://github.com/balde/balde)
+is tested by [Semaphore](https://semaphoreci.com/balde/balde), and the results
+can be seen here:
+
+[![Build Status](https://semaphoreci.com/api/v1/projects/b131b3c1-2343-4719-95ef-ebb743eb01ce/388645/badge.svg)](https://semaphoreci.com/balde/balde)
+
+</section>
+<section class="site">
+<header>
+
+# Contribute
+
+</header>
+
+Balde project is a work in progress. If you are interested in help on its
+development you can fork our GitHub repository
+[here](https://github.com/balde/balde/fork) and submit a pull-request with your
+modifications.
+
+</section>
+<section class="site">
+<header>
+
+# License
+
+</header>
+
+Balde is free software, released under the
+[LGPL 2.1](https://raw.githubusercontent.com/balde/balde/master/COPYING) license.
+
+</section>

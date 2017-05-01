@@ -141,10 +141,10 @@ section.site {
   margin-bottom: 30px;
 }
 
-.feature-list li {
+section.site li {
   margin-top: 5px;
   padding-top: 5px; }
-.feature-list li, footer.site {
+section.site li, footer.site {
   border-top: 2px solid #ddd;
 }
 

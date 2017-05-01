@@ -1,0 +1,18 @@
+[global]
+AUTHOR_NAME = Rafael G. Martins
+AUTHOR_EMAIL = rafael@rafaelmartins.eng.br
+SITE_TITLE = Balde
+SITE_TAGLINE = A microframework for C based on GLib and bad intentions.
+BASE_DOMAIN = https://balde.rgm.io
+
+[settings]
+locale = en_US.utf-8
+
+[pages]
+index
+
+[copy]
+assets/balde-logo.ico
+assets/balde-logo.png
+assets/main.css
+doc
