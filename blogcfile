@@ -1,7 +1,7 @@
 [global]
 AUTHOR_NAME = Rafael G. Martins
 AUTHOR_EMAIL = rafael@rafaelmartins.eng.br
-SITE_TITLE = Balde
+SITE_TITLE = balde
 SITE_TAGLINE = A microframework for C based on GLib and bad intentions.
 BASE_DOMAIN = https://balde.rgm.io
 

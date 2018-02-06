@@ -2,7 +2,7 @@
 <section class="site">
 <header>
 
-# Balde is easy...
+# balde is easy...
 
 </header>
 <pre><span class="cp">#include &lt;balde.h&gt;</span>
@@ -28,7 +28,7 @@
 <section class="site">
 <header>
 
-# Balde is fast
+# balde is fast
 
 </header>
 <div class="half">
@@ -81,7 +81,7 @@ can be seen here:
 
 </header>
 
-Balde project is a work in progress. If you are interested in help on its
+The balde project is a work in progress. If you are interested in help on its
 development you can fork our GitHub repository
 [here](https://github.com/balde/balde/fork) and submit a pull-request with your
 modifications.
@@ -94,7 +94,7 @@ modifications.
 
 </header>
 
-Balde is free software, released under the
+balde is free software, released under the
 [LGPL 2.1](https://raw.githubusercontent.com/balde/balde/master/COPYING) license.
 
 </section>
