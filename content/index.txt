@@ -35,10 +35,10 @@
 
 It is designed to be fast, simple, and memory efficient. Most of its architecture
 is based on other microframeworks, like Flask, and it can run on any web server
-that supports SCGI.
+that supports SCGI and/or FastCGI.
 
 With balde you can serve hundreds of requests per second with a minimal
-memory footprint and all the performance features provided by SCGI.
+memory footprint and all the performance features provided by SCGI and FastCGI.
 
 </div>
 </section>
